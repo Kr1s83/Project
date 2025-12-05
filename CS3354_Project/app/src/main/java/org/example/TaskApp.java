@@ -123,6 +123,10 @@ public class TaskApp extends JFrame {
 
             tasksList.writeTask("tasks.txt");
             JOptionPane.showMessageDialog(this, "Task Updated");
+
+            // Clear fields
+            nameField.setText("");
+            infoArea.setText("");
         });
 
         // Mark a task as complete
@@ -137,6 +141,10 @@ public class TaskApp extends JFrame {
             refreshList.run();
             tasksList.writeTask("tasks.txt");
             JOptionPane.showMessageDialog(this, "Task marked as complete");
+
+            // Clear fields
+            nameField.setText("");
+            infoArea.setText("");
         });
 
         // Delete a task
@@ -159,6 +167,9 @@ public class TaskApp extends JFrame {
 
             JOptionPane.showMessageDialog(this, "Task was deleted");
 
+            // Clear fields
+            nameField.setText("");
+            infoArea.setText("");
         });
       
         // Add to main panel
