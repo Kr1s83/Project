@@ -1,7 +1,9 @@
+// TaskApp app
+// Runs a ToDo List using Task.java and TasksList.java and saves tasks to tasks.txt
+
 package org.example;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 
 import java.awt.*;
 
@@ -158,43 +160,7 @@ public class TaskApp extends JFrame {
             JOptionPane.showMessageDialog(this, "Task was deleted");
 
         });
-        
-
-
-       /* manageTasksPanel.setLayout(new BorderLayout());
-        JPanel inputPanel = new JPanel(new GridLayout(4,1));
-        JLabel nameLabel = new JLabel("Task Name: ");
-        JTextField nameField = new JTextField();
-        JLabel infoLabel = new JLabel("Enter Task Description: ");
-        JTextArea infoArea = new JTextArea(5,20);
-        inputPanel.add(nameLabel);
-        inputPanel.add(nameField);
-        inputPanel.add(infoLabel);
-        inputPanel.add(new JScrollPane(infoArea));
-        manageTasksPanel.add(inputPanel, BorderLayout.CENTER);
-
-        JButton addButton = new JButton("Add Task");
-        manageTasksPanel.add(addButton, BorderLayout.SOUTH);
-        addButton.addActionListener(e -> {
-            String name = nameField.getText().trim();
-            String info = infoArea.getText().trim();
-            if (name.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Task must have a name!");
-                return;
-            }
-
-            tasksList.addTask(new Task(name, info));
-            
-            // Write to file
-            tasksList.writeTask("tasks.txt");
-
-            JOptionPane.showMessageDialog(this, "Task Added.");
-
-            // Clear fields
-            nameField.setText("");
-            infoArea.setText("");
-        }); */
-
+      
         // Add to main panel
         mainPanel.add(mainPage, "Home Page");
         mainPanel.add(completedTasksPanel, "Completed Tasks");
